@@ -1,8 +1,13 @@
 import LayoutContainer from "../components/LayoutContainer";
-import { Card, CardContent, CardActions, Typography, Box } from '@mui/material/';
+import { Card, CardContent, CardActions, Button, Typography, Box } from '@mui/material/';
+import { useNavigate } from "react-router-dom";
+import { useSelector } from 'react-redux';
+import { selectIsAuthenticated } from '../features/auth/authSelectors';
 
 const LandingPage = () => {
 
+    const navigate = useNavigate();
+    const isAuth = useSelector(selectIsAuthenticated);
     return (
         <LayoutContainer>
             <Card sx={{width: '80vw'}} raised>
@@ -13,6 +18,10 @@ const LandingPage = () => {
                     </Typography>
                     </CardContent>
                     <CardActions sx={{alignSelf: 'center'}}>
+                        {!isAuth ? <Button color='primary'  size='medium' variant='contained'
+                        onClick={() => navigate('/login')}>
+                            Log In
+                        </Button> : <></>}
                     </CardActions>
                 </Box>
             </Card>

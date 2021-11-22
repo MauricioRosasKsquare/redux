@@ -5,8 +5,8 @@ const NotFound = () => {
   return (
     <LayoutContainer>
       <div>
-        <h1>404 - Not Found!</h1>
-        <Link to='/home'>Go Home</Link>
+        <h1>Page Not Found!</h1>
+        <Link to='/'>Back</Link>
       </div>
     </LayoutContainer>
   );
