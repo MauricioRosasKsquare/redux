@@ -1,0 +1,75 @@
+.container {
+    background-color: "rgba(181, 211, 237, 0.14)";
+    min-height: "100vh";
+}
+
+.copyright {
+    text-align: "center";
+    padding: "16px";
+}
+
+.card {
+    max-width: "560px";
+    width: "560px";
+}
+
+.header {
+    text-align: "center";
+}
+
+.title {
+    font-size: "34px";
+    font-size: "normal";
+    line-height: "1.24";
+    letter-spacing: "0.25px";
+    text-align: "center";
+    color: "rgba(0, 0, 0, 0.87)";
+    margin: "0px";
+}
+
+.divider {
+    height: "1px";
+    margin: "25px 1px 27px 1px";
+    background-color: "#e0e0e0";
+}
+
+.cardContent {
+    padding: "22px 69px 22px 69px";
+}
+
+.subtitle {
+    font-size: "13px";
+    font-weight: "normal";
+    line-height: "1.62";
+    color: "#3e3e3c";
+  }
+.inputSpacer {
+    height: "27px";
+  }
+  
+.orText {
+    text-align: "center";
+}
+  
+.buttonContainer {
+    margin: "16px 0px";
+  }
+  
+.btnForgotContainer {
+    display: "flex";
+    justify-Content: "space-between";
+    align-items: "center";
+    padding-top: "16px";
+  }
+
+.btnForgot {
+    color: "#1e88e5";
+    font-size: "16px";
+    font-weight: 500;
+    line-height: "1.5";
+    letter-spacing: "0.09px";
+    background-color: "transparent";
+    border: "none";
+    text-decoration: "underline";
+    cursor: "pointer";
+  }
